@@ -1,0 +1,22 @@
+name: setup-ghasec
+description: Install ghasec
+
+inputs:
+  version:
+    description: "Version to install (e.g., 0.1.0, v0.1.0, or latest)"
+    required: false
+    default: "latest"
+  token:
+    description: "GitHub token for API requests (to avoid rate limiting)"
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: composite
+  steps:
+    - name: Install ghasec
+      shell: bash
+      env:
+        INPUT_VERSION: ${{ inputs.version }}
+        GITHUB_TOKEN: ${{ inputs.token }}
+      run: "${GITHUB_ACTION_PATH}/install.sh"
