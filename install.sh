@@ -89,9 +89,9 @@ if [ -z "${expected_hash}" ]; then
 fi
 
 if command -v sha256sum &> /dev/null; then
-  actual_hash=$(sha256sum "${install_dir}/${archive_name}" | awk '{print $1}')
+  actual_hash=$(sha256sum "${install_dir}/${archive_name}" | awk '{gsub(/^\\/, "", $1); print $1}')
 elif command -v shasum &> /dev/null; then
-  actual_hash=$(shasum -a 256 "${install_dir}/${archive_name}" | awk '{print $1}')
+  actual_hash=$(shasum -a 256 "${install_dir}/${archive_name}" | awk '{gsub(/^\\/, "", $1); print $1}')
 else
   echo "::error::Neither sha256sum nor shasum is available"
   exit 1
