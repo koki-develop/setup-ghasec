@@ -6,7 +6,7 @@ A GitHub Action to install [ghasec](https://github.com/koki-develop/ghasec), a s
 
 <!-- x-release-please-start-version -->
 ```yaml
-- uses: koki-develop/setup-ghasec@v0.0.0
+- uses: koki-develop/setup-ghasec@v1.0.0
 ```
 <!-- x-release-please-end -->
 
