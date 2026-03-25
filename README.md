@@ -4,9 +4,11 @@ A GitHub Action to install [ghasec](https://github.com/koki-develop/ghasec), a s
 
 ## Usage
 
+<!-- x-release-please-start-version -->
 ```yaml
-- uses: koki-develop/setup-ghasec@v1.0.0
+- uses: koki-develop/setup-ghasec@v0.0.0
 ```
+<!-- x-release-please-end -->
 
 ### Inputs
 
@@ -17,6 +19,7 @@ A GitHub Action to install [ghasec](https://github.com/koki-develop/ghasec), a s
 
 ### Example
 
+<!-- x-release-please-start-version -->
 ```yaml
 name: ghasec
 
@@ -33,6 +36,7 @@ jobs:
       - uses: koki-develop/setup-ghasec@v1.0.0
       - run: ghasec --format=github-actions
 ```
+<!-- x-release-please-end -->
 
 ## License
 
