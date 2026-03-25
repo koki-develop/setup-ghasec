@@ -1,5 +1,9 @@
-name: setup-ghasec
-description: Install ghasec
+name: Setup ghasec
+description: Set up ghasec, a security linter for GitHub Actions workflows
+
+branding:
+  icon: shield
+  color: red
 
 inputs:
   version:
