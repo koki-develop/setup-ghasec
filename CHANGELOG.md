@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/koki-develop/setup-ghasec/compare/v1.0.0...v1.0.1) (2026-05-30)
+
+
+### Patches
+
+* Fix SC2086 by quoting GITHUB_ACTION_PATH in shell context ([d24e73a](https://github.com/koki-develop/setup-ghasec/commit/d24e73a042309c1f28b1f559ad1a79f8697867d9))
+
 ## 1.0.0 (2026-03-25)
 
 
